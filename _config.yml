@@ -1,1 +1,6 @@
+#Jekyll config
+name: iGEM Dresden 2022
+description: Webpage about our iGEM team participating in iGEM 2022
+url: "http://igem-dresden.github.io"
+markdown: kramdown
 theme: jekyll-theme-cayman
