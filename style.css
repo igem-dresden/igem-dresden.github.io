@@ -1,0 +1,18 @@
+:root{
+    --foreground: #dff6f0;
+    --background: #20595e;
+}
+
+div.header {
+    color: var(--foreground);
+    background-color: var(--background);
+    text-align: center;
+    font-size: large;
+    padding: 2%;
+}
+
+body{
+    font-family: 'Marmelad', sans-serif;
+    background-color: var(--foreground);
+    color: var(--background);
+}
