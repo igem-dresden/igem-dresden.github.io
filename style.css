@@ -19,10 +19,19 @@ div.header {
     margin-left: 1%;
 }
 
-div.paragraph {
+.paragraph {
     font-size: large;
     margin-left:1%;
     margin-right: 50%;
+}
+
+.flags {
+    margin-left: 1%;
+    border-radius: 50%;
+}
+
+.flags > img {
+    border-radius: 10px;
 }
 
 body{
