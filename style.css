@@ -11,8 +11,25 @@ div.header {
     padding: 2%;
 }
 
+.headline {
+    margin-left: 1%;
+}
+
+.image {
+    margin-left: 1%;
+}
+
+div.paragraph {
+    font-size: large;
+    margin-left:1%;
+    margin-right: 50%;
+}
+
 body{
     font-family: 'Marmelad', sans-serif;
     background-color: var(--foreground);
     color: var(--background);
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:0%;
 }
