@@ -22,8 +22,21 @@ div.header {
 
 .paragraph {
     font-size: large;
-    margin-left:1%;
-    margin-right: 50%;
+}
+
+.icon {
+    fill: var(--background);
+}
+
+.link {
+    text-decoration: underline;
+    transition-duration: 0.1s;
+}
+
+.link:hover {
+    color: #ff004c;
+    fill: #ff004c;
+    cursor: pointer;
 }
 
 .flags {
