@@ -1,0 +1,79 @@
+:root{
+    --darkColor: #58279c;
+    --darkerColor:#2e1353;
+    --lightColor: #FAC710;
+    --lighterColor: #d7f2fd;
+    --lighter2Color: #eefaff;
+    --linkColor: #0059ff;
+    --linkColor_hover: #ff0062;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Marmelad', sans-serif;
+    background-color: var(--lighterColor);
+    color: var(--darkColor);
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:0%;
+}
+
+.headline {
+    text-align: center;
+    font-size: 40pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.link {
+    color: var(--linkColor);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+.link:hover {
+    color: var(--linkColor_hover);
+    fill: #ff004c;
+    cursor: pointer;
+}
+
+.paragraph {
+    font-size: 15pt;
+    padding: 15px;
+    border-color: var(--darkColor);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: var(--lighter2Color);
+    box-shadow: 10px 10px;
+    animation: appear-from-right;
+    animation-duration: 1s;
+}
+
+.sub-headline {
+    font-size: 18pt;
+}
+
+.appear-right {
+    transform: translateX(75px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.appear-left {
+    transform: translateX(-75px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.appear-right.active, .appear-left.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+    .appear-left, .appear-right {transform: translateY(0); opacity: 1;}
+}

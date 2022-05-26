@@ -8,39 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"> 
-    <script src="scripts/coming_soon.js"></script>
+    
+    <!--CSS Files-->
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/menu_bar.css">
+    <link rel="stylesheet" href="style/igem_logo.css">
+    <link rel="stylesheet" href="style/slide1.css">
+    <link rel="stylesheet" href="style/slide3.css">
+    
+    <!--Scripts-->
     <script src="scripts/scroll_Logic.js"></script>
-    <script src="scripts/hidden_nav_bar.js"></script>    
+    <script src="scripts/hidden_nav_bar.js"></script>
 </head>
 <body>
     <!--Menu Bar======================================================================================================================================================-->
     <ul class="menu_bar">
         <svg class="access_button" onclick="toggle_visibility();"><use href="#access_icon_show"/></svg>
         <div id="anchor_bar" class="">
-            <li onclick="document.getElementById('About iGEM').scrollIntoCenter()"><div>About iGEM</div></li>
-            <li onclick="document.getElementById('Synthetic Biology').scrollIntoCenter()"><div>Synthetic Biology</div></li>
-            <li><div>Chronic Wounds</div></li>
-            <li><div>A Possible Solution</div></li>
-            <li><div>Our Team</div></li>
-            <li><div>Supervisors</div></li>
-            <li><div>Support Us</div></li>
+            <li id="slide1-m" onclick="document.getElementById('slide1').scrollIntoCenter()">iGEM 2022</li>
+            <li id="slide2-m" onclick="document.getElementById('slide2').scrollIntoCenter()"><div>Synthetic Biology</div></li>
+            <li id="slide3-m" onclick="document.getElementById('slide3').scrollIntoCenter()">The Problem</li>
+            <li id="slide4-m" onclick="document.getElementById('slide4').scrollIntoCenter()">Our Solution</li>
+            <li id="slide5-m" onclick="document.getElementById('slide5').scrollIntoCenter()">Our Team</li>
+            <li id="slide6-m" onclick="document.getElementById('slide6').scrollIntoCenter()">Supervisors</li>
+            <li id="slide7-m" onclick="document.getElementById('slide7').scrollIntoCenter()">Support Us</li>
         </div>
     </ul>
     <!--==============================================================================================================================================================-->
-    <div class="header"><h1>iGEM Dresden 2022</h1></div>
-    <div class="link-header">
-        <div class="paragraph" style="margin-left: 0.5%">
-            <svg class="icon link" width="60" height="60" onclick="window.location.href = 'https\:\/\/www.instagram.com\/igem.dresden\/'"><use href="#instagram"/></svg>
-            <div class="link" style="margin-top: -2.25%; margin-left: 3%;">Follow us on Instagram!</div>
+
+    <div class="slide1-container">
+        <h1 id="slide1" class="slide1-header headline">iGEM 2022 at TU Dresden</h1>
+        <svg class="slide1-left appear-left"><use href="#igem_logo"/></svg>
+        <div class="slide1-right paragraph appear-right">
+            <h2 class="sub-headline">What is iGEM?</h2>
+            The International Genetically Engineered Machine (<a class="link" href="https://igem.org/">iGEM</a>)
+            is a student competition dedicated to the 
+            advancement of synthetic biology, 
+            interdisciplinary cooperation and education.
         </div>
     </div>
+
+    <h1 id="slide2" class="headline" style="margin-bottom: 1000px;">Synthetic Biology</h1>
     
-    <h1 class="headline" id="coming_soon">COMING SOON</h1>
-    <h1 id="About iGEM" style="margin-top: 500px;" class="headline">About iGEM</h1>
-    <h1 id="Synthetic Biology" style="margin-top: 500px;" class="headline">Synthetic Biology</h1>
-    <h1 id="Chronic Wounds" style="margin-top: 500px;" class="headline">Chronic Wounds</h1>
+    <div class="slide3-container">
+        <h1 id="slide3" class="slide3-header headline">The Problem</h1>
+        <div class="slide3-left paragraph appear-left">
+            <h2 class="sub-headline">Chronic Wounds</h2>
+            Chronic wounds are a growing problem and affect millions of patients each year in Germany alone. 
+            Worse yet, chronic wounds are susceptible to bacterial infections.
+            Long-term usage of antibiotics is sometimes 
+            required and contributes to the emergence of antibiotic-resistant strains, 
+            which has been declared by the WHO as “a global health threat”.
+        </div>
+        <img class="slide3-right appear-right" src="img/Brochure Wound.png" alt="An image of a chronic wound model" width="300px">
+    </div>
     
+    <h1 id="slide4" class="headline">Our Solution</h1>
+    <h1 id="slide5" class="headline">Our Team</h1>
+    <h1 id="slide6" class="headline">Supervisors</h1>
+    <h1 id="slide7" class="headline">Support Us</h1>
+
+    <div class="link-header">
+        <div class="paragraph">
+            <svg class="icon link" width="60" height="60" onclick="window.location.href = 'https\:\/\/www.instagram.com\/igem.dresden\/'"><use href="#instagram"/></svg>
+            <div class="link">Follow us on Instagram!</div>
+        </div>
+    </div>
       
 </body>
 </html>
@@ -64,6 +97,22 @@
     <rect id="line1" class="access_icon_line" x="21" y="56" width="86" height="15"/>
     <rect id="line2" class="access_icon_line" x="21" y="82" width="86" height="15"/>
     <rect id="line3" class="access_icon_line" x="21" y="31" width="86" height="15"/>
+    </g>
+</symbol>
+<symbol id="igem_logo" viewBox = "0 0 448.54 306.81">
+    <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="M227.46,68c0-43.45-40.79-68-80.8-68C76.58,0,38.31,75.58,43.68,192.88c2.85,62.26,34.63,93.29,72.65,93.29,94.19,0,
+    70.36-95.9,80.28-133.38C205.1,120.69,227.46,107.69,227.46,68Zm-47.77,80.36c-2.75,10.41-3.31,23.22-3.89,36.79-.87,20.14-1.85,43-10.08,
+    59.26A39.36,39.36,0,0,1,150,261.42c-8.37,4.81-19.7,7.26-33.68,7.26-14.25,0-26.74-5.9-36.11-17.06-11.3-13.45-17.89-34-19.06-59.54-1.66-36.17.94-68.16,
+    7.71-95.06,6.4-25.4,16.22-45.18,29.21-58.77,13.15-13.77,29.5-20.75,48.58-20.75,16.68,0,33,5.14,44.81,14.11C203.74,41,210,53.17,210,68c0,19.31-6.24,30.25-14.14,
+    44.09C190.11,122,183.65,133.36,179.69,148.32Z"></path>
+    <path class="cls-1" d="M167.87,44.71a27.37,27.37,0,1,0,27.36,27.36A27.37,27.37,0,0,0,167.87,44.71Zm0,40.73a13.37,13.37,0,1,1,13.36-13.37A13.39,13.39,0,0,1,167.87,85.44Z"></path>
+    <path class="cls-1" d="M120.19,42a10.72,10.72,0,1,0,10.72,10.71A10.7,10.7,0,0,0,120.19,42Z"></path>
+    <path class="cls-1" d="M383.66,215.2a11.88,11.88,0,0,0-5.94-1.59H350.43A10.57,10.57,0,0,1,339.86,203V119.62a10.57,10.57,0,0,1,10.57-10.57h27.29a11.88,11.88,0,0,0,5.94-1.59,7.45,7.45,0,0,0,2.73-10.16L376.33,79.88a7.45,7.45,0,0,0-10.17-2.72L344,89.93a7.45,7.45,0,0,1-9.2-1.42c-2.36-2.7-5.11-5-7.55-7.63a7.47,7.47,0,0,1-.53-8.22l12.78-22.13a7.45,7.45,0,0,0-2.72-10.16L319.4,30.31A7.44,7.44,0,0,0,309.23,33L296.47,55.14a7.41,7.41,0,0,1-8.63,3.38c-3-1-6.08-1.77-9.19-2.45a7.42,7.42,0,0,1-5.79-7.25V23.29a7.44,7.44,0,0,0-7.44-7.44H245.31a7.44,7.44,0,0,0-7.44,7.44V68a96.8,96.8,0,0,1-4.05,27.87,2.46,2.46,0,0,0,3.07,3.07C301,81,347.67,157.29,302.62,206.08h0c-25.14,27.6-71.82,26.77-96-1.6a2.46,2.46,0,0,0-4.3,1.45c-1.76,26-8.07,56-28.63,73.8a1.58,1.58,0,0,0,.21,2.56l17.42,10.06a7.44,7.44,0,0,0,10.17-2.72l12.76-22.11a7.4,7.4,0,0,1,8.63-3.38c3,.95,6.08,1.77,9.19,2.45a7.42,7.42,0,0,1,5.79,7.25v25.53a7.44,7.44,0,0,0,7.44,7.44h20.11a7.44,7.44,0,0,0,7.44-7.44V273.84a7.42,7.42,0,0,1,5.79-7.25c3.11-.68,6.18-1.5,9.19-2.45a7.41,7.41,0,0,1,8.63,3.38l12.76,22.11a7.44,7.44,0,0,0,10.17,2.72l17.42-10.06a7.45,7.45,0,0,0,2.72-10.16L326.76,250a7.44,7.44,0,0,1,1.4-9.18q3.48-3.18,6.68-6.67a7.45,7.45,0,0,1,9.2-1.42l22.12,12.78a7.47,7.47,0,0,0,10.17-2.73l10.06-17.42A7.46,7.46,0,0,0,383.66,215.2Z"></path>
+    <rect class="cls-2" y="152.15" width="25.04" height="54.27" rx="3.72"></rect><path class="cls-2" d="M160.91,155H125.29a3.71,3.71,0,0,0-3.72,3.72V170a3.71,3.71,0,0,0,3.72,3.72h14.92v6.74a3.7,3.7,0,0,1-1.43,2.94c-4.38,3.35-8.84,4.89-17.25,4.89-12.3.15-21.56-8.65-20.81-27.28,0-15.5,5.25-26.06,20-26.48,6.79-.12,12.29,2.77,14.92,8.33a3.73,3.73,0,0,0,3.37,2.16H159.4a3.72,3.72,0,0,0,3.65-4.44c-1.81-9.13-9.72-19-21-23.21-10-3.86-35.42-3.86-45.27,1.66-24.41,10.63-29.61,45.12-18.4,67.12,7.35,16.1,25,21.91,42.56,21.91,20.41,0,33.36-7.69,39.5-12.53a11.12,11.12,0,0,0,4.21-8.73V158.72A3.71,3.71,0,0,0,160.91,155Z"></path>
+    <path class="cls-2" d="M289.66,116.24H221.07a3.71,3.71,0,0,0-3.72,3.72V202.7a3.71,3.71,0,0,0,3.72,3.72h68.59a3.71,3.71,0,0,0,3.72-3.72v-13a3.72,3.72,0,0,0-3.72-3.72H247.12a1.86,1.86,0,0,1-1.86-1.86V170.05a1.86,1.86,0,0,1,1.86-1.86h37.79a3.73,3.73,0,0,0,3.72-3.72V153.54a3.72,3.72,0,0,0-3.72-3.72H247.12a1.87,1.87,0,0,1-1.86-1.86V137.35a1.86,1.86,0,0,1,1.86-1.86h42.54a3.72,3.72,0,0,0,3.72-3.72V120A3.71,3.71,0,0,0,289.66,116.24Z"></path>
+    <rect class="cls-2" y="127.3" width="25.04" height="17.04" rx="3.72"></rect>
+    <path class="cls-2" d="M444.82,116.24h-30a3.72,3.72,0,0,0-3.61,2.8l-12.08,47.38a1.24,1.24,0,0,1-2.41,0L384.5,119a3.72,3.72,0,0,0-3.6-2.79h-30a3.72,3.72,0,0,0-3.72,3.72V202.7a3.72,3.72,0,0,0,3.72,3.72h15.39A3.72,3.72,0,0,0,370,202.7V147.52a1.24,1.24,0,0,1,2.44-.31l14.39,56.41a3.72,3.72,0,0,0,3.61,2.8h14.87a3.72,3.72,0,0,0,3.61-2.8l14.43-56.43a1.24,1.24,0,0,1,2.44.31v55.2a3.71,3.71,0,0,0,3.72,3.72h15.35a3.72,3.72,0,0,0,3.72-3.72V120A3.72,3.72,0,0,0,444.82,116.24Z"></path>
     </g>
 </symbol>
 </svg>

@@ -1,0 +1,27 @@
+.slide3-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Creates a 2 column grid*/
+    grid-template-areas: 'header header' 'left_side right_side';
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 400px;
+}
+
+.slide3-header {
+    grid-area: header;
+}
+
+.slide3-left {
+    grid-area: left_side;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.slide3-right {
+    grid-area: right_side;
+}
+
+@media screen and (max-width: 750px) {
+    .slide3-container { grid-template-areas: 'header header header' 'left_side left_side left_side' 'right_side right_side right_side'; }
+    .slide3-right {margin-left: 25%; margin-top: 30px;}
+}

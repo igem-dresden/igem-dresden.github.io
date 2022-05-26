@@ -1,0 +1,11 @@
+#igem_logo {
+    margin-left: 50%;
+}
+
+.cls-1 {
+    fill: var(--darkColor);
+}
+
+.cls-2 {
+    fill: var(--darkerColor);
+}
