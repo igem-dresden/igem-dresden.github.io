@@ -43,6 +43,7 @@ body{
 .paragraph {
     font-size: 15pt;
     padding: 15px;
+    height: fit-content;
     border-color: var(--darkColor);
     border-width: 5px;
     border-style: solid;

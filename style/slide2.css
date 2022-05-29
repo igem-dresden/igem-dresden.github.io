@@ -1,4 +1,4 @@
-.slide1-container {
+.slide2-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /*Creates a 2 column grid*/
     grid-template-areas: 'header header' 'left_side right_side';
@@ -7,25 +7,31 @@
     margin-bottom: 400px;
 }
 
-.slide1-header {
+.slide2-header {
     grid-area: header;
 }
 
-.slide1-left {
+.slide2-left {
     grid-area: left_side;
+    height: 800px;
     width: 100%;
 }
 
-.slide1-right {
+.slide2-right {
     grid-area: right_side;
     margin-left: 12.5%;
     width: 75%;
+    margin-top: 37.5%;
 }
 
 @media screen and (max-width: 750px) {
-    .slide1-container { grid-template-areas: 'header header' 'left_side left_side' 'right_side right_side'; }
+    .slide2-container { grid-template-areas: 'header header' 'left_side left_side' 'right_side right_side'; }
 }
 
 @media screen and (min-width: 1100px) {
-    .slide1-left { margin-left: 30%; }
+    .slide2-left { margin-left: 30%; }
+}
+
+@media screen and (max-width: 1100px) {
+    .slide2-right { margin-top: 50%; }
 }
