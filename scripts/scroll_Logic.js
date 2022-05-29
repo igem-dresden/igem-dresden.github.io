@@ -34,7 +34,6 @@ window.onscroll = () => {
         let offset = i.offsetTop - window.innerHeight * 0.15;
         let height = i.offsetHeight;
         let id = i.getAttribute('id');
-        console.log("Hey")
         if (top >= offset && top < offset + height) {
             menu.forEach(link => {
             link.classList.remove('active');
