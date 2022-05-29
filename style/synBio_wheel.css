@@ -1,19 +1,26 @@
-#synBio_wheel {
+#synBio-wheel {
     transform-origin: center center;
-    animation: rotate_one_third;
+}
+
+#synBio-wheel_inner-arrows{
+    transform-origin: center center;
+    animation-name: rotate_around;
     animation-duration: 9s;
-    animation-delay: 3s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /*animation: 13.33%*/
 /*pause: 20%*/
-@keyframes rotate_one_third {
-    0% { transform: rotate(0deg); }
-    13.33% { transform: rotate(-120deg);}
-    33.33% { transform: rotate(-120deg);}
-    46.66% { transform: rotate(-240deg);}
-    66.66% { transform: rotate(-240deg);}
-    79.99% { transform: rotate(-360deg);}
-    100% { transform: rotate(-360deg); }
+@keyframes rotate_around{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#synBio-wheel_outer-circle {
+    transform-origin: 50% 50.75%;
+    animation-name: rotate_around;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
