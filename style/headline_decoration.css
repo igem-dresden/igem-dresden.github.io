@@ -1,0 +1,13 @@
+.headline-deco-container {
+    position: relative;
+    height: 700px;
+    top:350px;
+}
+
+#Headline_Decoration {
+    fill: var(--lighterColorAlt);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    transform: scaleX(130%) scaleY(130%);
+}

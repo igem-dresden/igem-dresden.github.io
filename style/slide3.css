@@ -1,10 +1,12 @@
 .slide3-container {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr; /*Creates a 2 column grid*/
     grid-template-areas: 'header header' 'left_side right_side';
     gap: 10px;
     padding: 10px;
-    margin-bottom: 400px;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .slide3-header {
