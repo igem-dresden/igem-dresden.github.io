@@ -43,3 +43,28 @@ window.onscroll = () => {
         }
     });
 };
+
+/* 
+ * ==============================================================================
+ * Parallax Scroll
+ * ==============================================================================
+ * 
+ * This little script will provide the functionality to create a 
+ * parallax effect for html elements.
+ * To create such effect, elements must have the class scrollItem 
+ * and the custom attribute data-scrollWeight
+ * to determine their parallax speed. 
+ * This attribute must be a number to have an effect on the element's movement.
+*/
+
+window.addEventListener('scroll', function(e) {
+        
+    const target = document.querySelectorAll('.scrollItem');
+
+    for(let i = 0; i < target.length; i++) {
+        var scrollweight = Number(target[i].dataset['scrollweight']);
+        var scrollRate = `${(window.pageYOffset / window.innerHeight) * 100 * scrollweight}%`;
+
+        target[i].style.transform = 'translate3d(0px, ' + scrollRate + ', 0px)';
+    }
+}); 

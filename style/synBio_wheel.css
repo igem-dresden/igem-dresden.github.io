@@ -10,13 +10,6 @@
     animation-timing-function: linear;
 }
 
-/*animation: 13.33%*/
-/*pause: 20%*/
-@keyframes rotate_around{
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-
 #synBio-wheel_outer-circle {
     transform-origin: 50% 50.75%;
     animation-name: rotate_around;

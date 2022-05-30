@@ -79,3 +79,8 @@ body{
 @media screen and (max-width: 750px) {
     .appear-left, .appear-right {transform: translateY(0); opacity: 1;}
 }
+
+@keyframes rotate_around{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

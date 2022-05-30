@@ -1,7 +1,8 @@
 .headline-deco-container {
     position: relative;
-    height: 700px;
-    top:350px;
+    margin:0;
+    padding:0;
+    z-index: -1;
 }
 
 #Headline_Decoration {
@@ -10,4 +11,17 @@
     margin: 0;
     padding: 0;
     transform: scaleX(130%) scaleY(130%);
+}
+
+#Headline_Decoration #Gear1, #Headline_Decoration #Gear2 {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation-name: rotate_around;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#Headline_Decoration #Gear2 {
+    animation-direction: reverse;
 }
