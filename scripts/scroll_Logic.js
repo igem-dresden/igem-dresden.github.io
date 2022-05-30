@@ -26,24 +26,6 @@ function appearWhenInView () {
 window.addEventListener("scroll", appearWhenInView);
 window.addEventListener("load", appearWhenInView);
 
-window.onscroll = () => {
-    let headlines = document.querySelectorAll('.headline');
-    let menu = document.querySelectorAll('.menu_bar li');
-    headlines.forEach(i => {
-        let top = window.scrollY;
-        let offset = i.offsetTop - window.innerHeight * 0.15;
-        let height = i.offsetHeight;
-        let id = i.getAttribute('id');
-        if (top >= offset && top < offset + height) {
-            menu.forEach(link => {
-            link.classList.remove('active');
-            document.getElementById(id + "-m").classList.add('active');
-            console.log(id + "-m");
-            });
-        }
-    });
-};
-
 /* 
  * ==============================================================================
  * Parallax Scroll
@@ -67,4 +49,24 @@ window.addEventListener('scroll', function(e) {
 
         target[i].style.transform = 'translate3d(0px, ' + scrollRate + ', 0px)';
     }
-}); 
+});
+
+/*
+window.addEventListener('scroll', () => {
+    let headlines = document.querySelectorAll('.headline');
+    let menu = document.querySelectorAll('.menu_bar li');
+    headlines.forEach(i => {
+        let top = window.scrollY;
+        let offset = i.offsetTop - window.innerHeight * 0.15;
+        let height = i.offsetHeight;
+        let id = i.getAttribute('id');
+        if (top >= offset && top < offset + height) {
+            menu.forEach(link => {
+            link.classList.remove('active');
+            document.getElementById(id + "-m").classList.add('active');
+            console.log(id + "-m");
+            });
+        }
+    });
+});
+*/

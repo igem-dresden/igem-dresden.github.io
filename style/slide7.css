@@ -1,0 +1,23 @@
+.slide7 {
+    grid-template-columns: 1fr; /*Creates a 2 column grid*/
+    grid-template-areas: 'header header' 'left_side right_side';
+}
+
+.slide7-header {
+    grid-area: header;
+}
+
+.slide7-left {
+    grid-area: left_side;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.slide7-right {
+    grid-area: right_side;
+}
+
+@media screen and (max-width: 750px) {
+    .slide7-container { grid-template-areas: 'header header header' 'left_side left_side left_side' 'right_side right_side right_side'; }
+    .slide7-right {margin-left: 25%; margin-top: 30px;}
+}
