@@ -4,6 +4,7 @@
 
 #synBio-wheel_inner-arrows{
     transform-origin: center center;
+    transform-box: fill-box;
     animation-name: rotate_around;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -11,9 +12,20 @@
 }
 
 #synBio-wheel_outer-circle {
-    transform-origin: 50% 50.75%;
+    transform-origin: center center;
+    transform-box: fill-box;
     animation-name: rotate_around;
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+#rotating_molecule {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation-name: rotate_around;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
 }

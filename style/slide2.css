@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    .slide2-container { grid-template-areas: 'header header' 'left_side left_side' 'right_side right_side'; }
+    .slide2 { grid-template-areas: 'header header' 'left_side left_side' 'right_side right_side'; }
 }
 
 @media screen and (min-width: 1100px) {

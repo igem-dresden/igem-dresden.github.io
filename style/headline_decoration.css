@@ -2,18 +2,37 @@
     position: relative;
     margin:0;
     padding:0;
-    z-index: -1;
+    z-index: 1;
 }
 
-#Headline_Decoration {
-    fill: var(--lighterColorAlt);
+.headline-deco-ref-point {
+    position: absolute;
+}
+
+#headline_Decoration, #headline_Medicine {
     position: absolute;
     margin: 0;
     padding: 0;
-    transform: scaleX(130%) scaleY(130%);
 }
 
-#Headline_Decoration #Gear1, #Headline_Decoration #Gear2 {
+#headline_Decoration {
+    fill: var(--lighterColorAlt);
+    transform: scale(130%);
+}
+
+#headline_Medicine {
+    fill: var(--lighterColor);
+    transform: scale(130%);
+}
+
+#headline_DNA {
+    fill: var(--lighterColor);
+    transform: scale(111%);
+}
+
+
+
+#headline_Decoration #Gear1, #headline_Decoration #Gear2 {
     transform-origin: center center;
     transform-box: fill-box;
     animation-name: rotate_around;
@@ -22,6 +41,6 @@
     animation-timing-function: linear;
 }
 
-#Headline_Decoration #Gear2 {
+#headline_Decoration #Gear2 {
     animation-direction: reverse;
 }

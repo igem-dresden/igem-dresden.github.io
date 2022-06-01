@@ -27,6 +27,7 @@ body{
     font-size: 40pt;
     margin-top: 30px;
     margin-bottom: 30px;
+    z-index: 2;
 }
 
 .link {
@@ -53,6 +54,11 @@ body{
     box-shadow: 10px 10px;
     animation: appear-from-right;
     animation-duration: 1s;
+    z-index: 2;
+}
+
+img {
+    z-index: 2;
 }
 
 .sub-headline {

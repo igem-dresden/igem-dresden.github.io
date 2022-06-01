@@ -18,6 +18,6 @@
 }
 
 @media screen and (max-width: 750px) {
-    .slide5-container { grid-template-areas: 'header header header' 'left_side left_side left_side' 'right_side right_side right_side'; }
+    .slide5 { grid-template-areas: 'header header header' 'left_side left_side left_side' 'right_side right_side right_side'; }
     .slide5-right {margin-left: 25%; margin-top: 30px;}
 }
