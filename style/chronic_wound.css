@@ -1,0 +1,43 @@
+#chronic_wound {
+    width: 600px;
+}
+
+.Germ * {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation-name: Germ_animation;
+    animation-duration: 7s;
+    animation-delay: var(--delay);
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.Neutrophil {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation-name: rotate_around;
+    animation-duration: 9s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.Monocyte {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation-name: rotate_around;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes Germ_animation {
+    from {transform: translateY(25px) scale(110%)}
+    50% {transform: rotate(10deg) translateY(-25px) scale(110%)}
+    to {transform: translateY(25px) scale(110%)}
+}
+
+@keyframes wobble {
+    from {transform: scale(110%, 90%);}
+    to {transform: scale(90%, 110%);}
+}

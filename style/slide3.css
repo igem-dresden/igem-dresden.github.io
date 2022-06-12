@@ -19,5 +19,4 @@
 
 @media screen and (max-width: 750px) {
     .slide3 { grid-template-areas: 'header header header' 'left_side left_side left_side' 'right_side right_side right_side'; }
-    .slide3-right {margin-left: 25%; margin-top: 30px;}
 }
