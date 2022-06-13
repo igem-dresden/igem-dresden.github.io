@@ -10,7 +10,7 @@
 
 .slide2-left {
     grid-area: left_side;
-    height: 800px;
+    height: 1000px;
     width: 100%;
 }
 
@@ -23,12 +23,14 @@
 
 @media screen and (max-width: 750px) {
     .slide2 { grid-template-areas: 'header header' 'left_side left_side' 'right_side right_side'; }
+    .slide2-right {margin-top: 0;}
 }
 
 @media screen and (min-width: 1100px) {
-    .slide2-left { margin-left: 30%; }
+    .slide2-left { margin-left: 30%;}
 }
 
 @media screen and (max-width: 1100px) {
-    .slide2-right { margin-top: 50%; }
+    .slide2-right { margin-top: 0;}
+    .slide2-left { width: 140%;}
 }
