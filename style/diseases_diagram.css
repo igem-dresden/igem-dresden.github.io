@@ -2,10 +2,6 @@
     --column_scale: 100%;
 }
 
-#diseases_diagram {
-    
-}
-
 #diseases_diagram #Texts {
     fill: black;
     font-family: 'Marmelad', sans-serif;
