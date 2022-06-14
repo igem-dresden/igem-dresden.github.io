@@ -1,4 +1,5 @@
 :root{
+    /*COLORS*/
     --darkColor: #58279c;
     --darkerColor:#2e1353;
     --lightColor: #FAC710;
@@ -7,6 +8,9 @@
     --lighter2Color: #eefaff;
     --linkColor: #0059ff;
     --linkColor_hover: #ff0062;
+
+    /*GLOBAL VARIABLES*/
+    --column_scale: 0%;
 }
 
 * {

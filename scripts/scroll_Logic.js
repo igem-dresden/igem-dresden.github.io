@@ -11,7 +11,7 @@ Element.prototype.getCoordinates = function() {
 }
 
 function appearWhenInView () {
-    var appearElements = document.querySelectorAll(".appear-left, .appear-right");
+    var appearElements = document.querySelectorAll(".appear-left, .appear-right, .diseases_diagram");
     for(i = 0; i < appearElements.length; i++) {
         let position = appearElements[i].getBoundingClientRect().top;
         if(position < window.innerHeight - 150) {

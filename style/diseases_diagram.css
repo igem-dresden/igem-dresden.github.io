@@ -1,0 +1,41 @@
+.diseases_diagram.active {
+    --column_scale: 100%;
+}
+
+#diseases_diagram {
+    
+}
+
+#diseases_diagram #Texts {
+    fill: black;
+    font-family: 'Marmelad', sans-serif;
+}
+
+#diseases_diagram #Circles {
+    transform-box: content-box;
+    fill:none;
+    stroke: black;
+    opacity: 25%;
+}
+
+#diseases_diagram #Radial_Lines, #diseases_diagram #Horizontal_Lines {
+    stroke: black;
+}
+
+#diseases_diagram #Diagram_Now * {
+    transform-origin: center center;
+    fill: var(--darkColor);
+    transform: scale(var(--column_scale));
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: var(--column-delay);
+}
+
+#diseases_diagram #Diagram_2050 * {
+    fill: var(--linkColor_hover);
+    transform-origin: center center;
+    transform: scale(var(--column_scale));
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: var(--column-delay);
+}
