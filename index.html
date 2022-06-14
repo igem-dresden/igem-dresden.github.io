@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iGEM Dresden 2022</title>
+
+    <!--External Files-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     
     <!--CSS Files-->
     <link rel="stylesheet" href="style/base.css">
@@ -30,147 +33,178 @@
     <script src="scripts/hidden_nav_bar.js"></script>
 </head>
 <body>
-    <!--Menu Bar======================================================================================================================================================-->
-    <ul class="menu_bar">
-        <svg class="access_button" onclick="toggle_visibility();"><use href="#access_icon_show"/></svg>
-        <div id="anchor_bar" class="">
-            <li id="slide1-m" onclick="document.getElementById('slide1').scrollIntoCenter()">iGEM 2022</li>
-            <li id="slide2-m" onclick="document.getElementById('slide2').scrollIntoCenter()"><div>Synthetic Biology</div></li>
-            <li id="slide3-m" onclick="document.getElementById('slide3').scrollIntoCenter()">The Problem</li>
-            <li id="slide4-m" onclick="document.getElementById('slide4').scrollIntoCenter()">Our Solution</li>
-            <li id="slide5-m" onclick="document.getElementById('slide5').scrollIntoCenter()">Our Team</li>
-            <li id="slide6-m" onclick="document.getElementById('slide6').scrollIntoCenter()">Supervisors</li>
-            <li id="slide7-m" onclick="document.getElementById('slide7').scrollIntoCenter()">Follow Us</li>
-        </div>
-    </ul>
-    <!--==============================================================================================================================================================-->
+<!--Menu Bar======================================================================================================================================================-->
+<ul class="menu_bar">
+     <svg class="access_button" onclick="toggle_visibility();">
+          <use href="#access_icon_show" />
+     </svg>
+     <div id="anchor_bar" class="">
+          <li id="slide1-m" onclick="document.getElementById('slide1').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> iGEM 2022</li>
+          <li id="slide2-m" onclick="document.getElementById('slide2').scrollIntoCenter()"><i class="fa-solid fa-gears"></i> Synthetic Biology</li>
+          <li id="slide3-m" onclick="document.getElementById('slide3').scrollIntoCenter()"><i class="fa-solid fa-circle-exclamation"></i> The Problem</li>
+          <li id="slide4-m" onclick="document.getElementById('slide4').scrollIntoCenter()"><i class="fa-solid fa-lightbulb"></i> Our Solution</li>
+          <li id="slide5-m" onclick="document.getElementById('slide5').scrollIntoCenter()"><i class="fa-solid fa-people-group"></i> Our Team</li>
+          <li id="slide6-m" onclick="document.getElementById('slide6').scrollIntoCenter()"><i class="fa-solid fa-handshake"></i> Supervisors & Collaborators</li>
+          <li id="slide7-m" onclick="document.getElementById('slide7').scrollIntoCenter()"><i class="fa-solid fa-address-book"></i> Follow Us</li>
+     </div>
+</ul>
+<!--==============================================================================================================================================================-->
 
-    <div class="slide-container slide1">
-        <h1 id="slide1" class="slide1-header headline">iGEM 2022 at TU Dresden</h1>
-        <svg class="slide1-left appear-left" style="z-index: 2;"><use href="#igem_logo"/></svg>
-        <div class="slide1-right paragraph appear-right">
-            <h2 class="sub-headline">What is iGEM?</h2>
-            The International Genetically Engineered Machine (<a class="link" href="https://igem.org/">iGEM</a>)
-            is a student competition dedicated to the 
-            advancement of synthetic biology, 
-            interdisciplinary cooperation and education.
-        </div>
-    </div>
-    
-    <div class="headline-deco-container" style="height: 0; width: 0">
-        <div class="headline-deco-ref-point scrollItem" data-scrollWeight="0.2" style="height: 700px; width: 500vw; top: -400px;">
-            <svg height="100%" width="100%" preserveAspectRatio="xMinYMin"><use href=#headline_Decoration /></svg>
-        </div>
-    </div>
-    <div class="slide-container slide2">
-        <h1 id="slide2" class="slide2-header headline">Synthetic Biology</h1>
-        <svg class="slide2-left appear-left" style="z-index: 2;"><use href="#synBio-wheel"/></svg>
-        <div class="slide2-right paragraph appear-right">
-            <h2 class="sub-headline">What is Synthetic Biology?</h2>
-            Synthetic biology is a field of science that involves redesigning organisms 
-            for useful purposes by engineering them to have new abilities.
-            Synthetic biology researchers and companies around the world are harnessing 
-            the power of nature to solve problems in medicine, manufacturing and agriculture.
-        </div>
-    </div>
-    <div class="headline-deco-container" style="height: 0; width: 0">
-        <div class="headline-deco-ref-point scrollItem" data-scrollWeight="0.2" style="height: 800px; width: 500vw; top: -700px;">
-            <svg height="100%" width="100%" preserveAspectRatio="xMinYMin"><use href=#headline_Decoration /></svg>
-        </div>
-    </div>
-    <div class="slide-container slide3">
-        <h1 id="slide3" class="slide3-header headline">The Problem</h1>
-        <div class="slide3-left paragraph appear-left">
-            <h2 class="sub-headline">Chronic Wounds</h2>
-            Chronic wounds are a growing problem and affect millions of patients each year in Germany alone. 
-            Worse yet, chronic wounds are susceptible to bacterial infections.
-            Long-term usage of antibiotics is sometimes 
-            required and contributes to the emergence of antibiotic-resistant strains, 
-            which has been declared by the WHO as “a global health threat”.
-        </div>
-        <svg class="slide3-right appear-right" width="100%" height="800px" style="z-index: 2;"><use href="#chronic_wound"/></svg>
-    </div>
-    <div class="slide-container slide4">
-        <h1 id="slide4" class="slide4-header headline">Our Solution</h1>
-        <div class="slide4-left paragraph appear-left">
-            <h2 class="sub-headline">Phage Therapy | Healing Factors | Hydrogel</h2>
-            We will produce bacteriophages to target antibiotic-resistant bacteria that
-            infect wounds by adopting a phage therapy approach. Moreover, we will use
-            yeast cells as biofactories for the synthesis of human growth factors which will be
-            employed to stimulate the healing of chronic wounds. The bacteriophages and the human growth factors would be combined into a
-            hydrogel dressing to administer them to the chronic wound tissue. <br><br>
-            We also plan to employ mathematical and molecular dynamics in-silico
-            approaches to simulate and model the interactions of the therapeutics inside the
-            hydrogel polymer mesh and their release so as to gain insights into the effects of
-            different hydrogel compositions on the diffusion processes inside the hydrogel.
-        </div>
-    </div>
+<div class="slide-container slide1">
+     <h1 id="slide1" class="slide1-header headline">iGEM 2022 at TU Dresden</h1>
+     <svg class="slide1-left appear-left" style="z-index: 2;">
+          <use href="#igem_logo" />
+     </svg>
+     <div class="slide1-right paragraph appear-right">
+          <h2 class="sub-headline">What is iGEM?</h2>
+          The International Genetically Engineered Machine (<a class="link" href="https://igem.org/">iGEM</a>)
+          is a student competition dedicated to the
+          advancement of synthetic biology,
+          interdisciplinary cooperation and education.
+     </div>
+</div>
 
-    <div class="headline-deco-container" style="height: 0; width: 0;">
-        <div class="headline-deco-ref-point scrollItem" data-scrollWeight="-0.1" style="height: 800px; width: 500vw; top: -150px;">
-            <svg height="100%" width="100%" preserveAspectRatio="xMinYMin"><use href=#headline_Medicine /></svg>
-        </div>
-    </div>
-    <div class="slide-container slide5">
-        <h1 id="slide5" class="slide5-header headline">Our Team</h1>
-        <div class="slide5-left paragraph appear-left">
-            <h2 class="sub-headline">About Our Team</h2>
-            We are a team of students representing <b>TU Dresden</b> at the 2022 <b>International
-            Genetically Engineered Machine</b> (iGEM) competition. Our team is composed of 13 members from 6 different countries 
-            - <b>Italy, Belarus, USA, Lithuania, Russia, and Germany</b> - 
-            with students from all three master
-            programs of the <b>Center for Molecular and Cellular Bioengineering</b> (CMCB) and from
-            <b>Informatik, Medieninformatik</b>, and the <b>für Bildende Künste</b>. <br><br>
-            The interdisciplinarity of our team leads to fruitful discussions during meetings
-            and in the lab and has already proved valuable to making headways and obtaining
-            early results. We feel lucky we have had the great opportunity to meet through the
-            excellent environment offered here at TU Dresden.
-        </div>
-    </div>
+<div class="headline-deco-container" style="height: 0; width: 0">
+     <div class="headline-deco-ref-point scrollItem" data-scrollWeight="0.2"
+          style="height: 700px; width: 500vw; top: -400px;">
+          <svg height="100%" width="100%" preserveAspectRatio="xMinYMin">
+               <use href=#headline_Decoration />
+          </svg>
+     </div>
+</div>
+<div class="slide-container slide2">
+     <h1 id="slide2" class="slide2-header headline">Synthetic Biology</h1>
+     <svg class="slide2-left appear-left" style="z-index: 2;">
+          <use href="#synBio-wheel" />
+     </svg>
+     <div class="slide2-right paragraph appear-right">
+          <h2 class="sub-headline">What is Synthetic Biology?</h2>
+          Synthetic biology is a field of science that involves redesigning organisms
+          for useful purposes by engineering them to have new abilities.
+          Synthetic biology researchers and companies around the world are harnessing
+          the power of nature to solve problems in medicine, manufacturing and agriculture.
+     </div>
+</div>
+<div class="headline-deco-container" style="height: 0; width: 0">
+     <div class="headline-deco-ref-point scrollItem" data-scrollWeight="0.2"
+          style="height: 800px; width: 500vw; top: -700px;">
+          <svg height="100%" width="100%" preserveAspectRatio="xMinYMin">
+               <use href=#headline_Decoration />
+          </svg>
+     </div>
+</div>
+<div class="slide-container slide3">
+     <h1 id="slide3" class="slide3-header headline">The Problem</h1>
+     <div class="slide3-left paragraph appear-left">
+          <h2 class="sub-headline">Chronic Wounds</h2>
+          Chronic wounds are a growing problem and affect millions of patients each year in Germany alone.
+          Worse yet, chronic wounds are susceptible to bacterial infections.
+          Long-term usage of antibiotics is sometimes
+          required and contributes to the emergence of antibiotic-resistant strains,
+          which has been declared by the WHO as “a global health threat”.
+     </div>
+     <svg class="slide3-right appear-right" width="100%" height="800px" style="z-index: 2;">
+          <use href="#chronic_wound" />
+     </svg>
+</div>
+<div class="slide-container slide4">
+     <h1 id="slide4" class="slide4-header headline">Our Solution</h1>
+     <div class="slide4-left paragraph appear-left">
+          <h2 class="sub-headline">Phage Therapy | Healing Factors | Hydrogel</h2>
+          We will produce bacteriophages to target antibiotic-resistant bacteria that
+          infect wounds by adopting a phage therapy approach. Moreover, we will use
+          yeast cells as biofactories for the synthesis of human growth factors which will be
+          employed to stimulate the healing of chronic wounds. The bacteriophages and the human growth factors would be
+          combined into a
+          hydrogel dressing to administer them to the chronic wound tissue. <br><br>
+          We also plan to employ mathematical and molecular dynamics in-silico
+          approaches to simulate and model the interactions of the therapeutics inside the
+          hydrogel polymer mesh and their release so as to gain insights into the effects of
+          different hydrogel compositions on the diffusion processes inside the hydrogel.
+     </div>
+</div>
 
-    <div class="slide-container slide6">
-        <h1 id="slide6" class="slide6-header headline">Supervisors and Collaborators</h1>
-        <div class="slide6-left paragraph appear-left">
-            <h2 class="sub-headline">Supervisors and Collaborators</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Commodi adipisci eos velit eius corporis eaque, molestias tempore repellat unde ipsum 
-            nemo dolorem repellendus laboriosam ut deserunt eligendi iste eum maxime. 
-        </div>
-    </div>
+<div class="headline-deco-container" style="height: 0; width: 0;">
+     <div class="headline-deco-ref-point scrollItem" data-scrollWeight="-0.1"
+          style="height: 800px; width: 500vw; top: -150px;">
+          <svg height="100%" width="100%" preserveAspectRatio="xMinYMin">
+               <use href=#headline_Medicine />
+          </svg>
+     </div>
+</div>
+<div class="slide-container slide5">
+     <h1 id="slide5" class="slide5-header headline">Our Team</h1>
+     <div class="slide5-left paragraph appear-left">
+          <h2 class="sub-headline">About Our Team</h2>
+          We are a team of students representing <b>TU Dresden</b> at the 2022 <b>International
+               Genetically Engineered Machine</b> (iGEM) competition. Our team is composed of 13 members from 6
+          different countries
+          - <b>Italy, Belarus, USA, Lithuania, Russia, and Germany</b> -
+          with students from all three master
+          programs of the <b>Center for Molecular and Cellular Bioengineering</b> (CMCB) and from
+          <b>Informatik, Medieninformatik</b>, and the <b>für Bildende Künste</b>. <br><br>
+          The interdisciplinarity of our team leads to fruitful discussions during meetings
+          and in the lab and has already proved valuable to making headways and obtaining
+          early results. We feel lucky we have had the great opportunity to meet through the
+          excellent environment offered here at TU Dresden.
+     </div>
+</div>
 
-    <div class="slide-container slide7">
-        <h1 id="slide7" class="slide7-header headline">Follow us</h1>
-        <div class="slide7-left paragraph appear-left">
-            <h2 class="sub-headline">Follow us</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Commodi adipisci eos velit eius corporis eaque, molestias tempore repellat unde ipsum 
-            nemo dolorem repellendus laboriosam ut deserunt eligendi iste eum maxime. 
-        </div>
-    </div>
+<div class="slide-container slide6">
+     <h1 id="slide6" class="slide6-header headline">Supervisors and Collaborators</h1>
+     <div class="slide6-left paragraph appear-left">
+          <h2 class="sub-headline">Supervisors and Collaborators</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Commodi adipisci eos velit eius corporis eaque, molestias tempore repellat unde ipsum
+          nemo dolorem repellendus laboriosam ut deserunt eligendi iste eum maxime.
+     </div>
+</div>
 
-    <div class="link-header">
-        <div class="paragraph">
-            <svg class="icon link" width="60" height="60" onclick="window.location.href = 'https\:\/\/www.instagram.com\/igem.dresden\/'"><use href="#instagram"/></svg>
-            <div class="link">Follow us on Instagram!</div>
-        </div>
-    </div>
+<div class="slide-container slide7">
+     <h1 id="slide7" class="slide7-header headline">Follow Us</h1>
+     <div class="slide7-middle paragraph">
+          <h2 class="sub-headline">Follow or Contact Us</h2>
+          <div class="link sub-headline" onclick="window.location.href = 'https\:\/\/www.instagram.com\/igem.dresden\/'">
+               <i class="fa-brands fa-instagram"></i> 
+               igem.dresden
+          </div>
+          <br>
+          <div class="link sub-headline" onclick="window.location.href = 'https\:\/\/twitter.com\/igem_dresden?s=20&t=jsRwm8qDkxNFJG79k-ulnQ'">
+               <i class="fa-brands fa-twitter" style="fill:#1da1f2;"></i>
+               @igem_dresden
+          </div>
+          <br>
+          <div class="link sub-headline" onclick="window.location.href = 'mailto:igem@tu-dresden.de'">
+               <i class="fa-solid fa-envelope"></i>
+               igem@tu-dresden.de
+          </div>
+     </div>
+     <div class="slide7-left paragraph appear-left">
+          <h2 class="sub-headline">Learn more about iGEM</h2>
+          <div class="link sub-headline" onclick="window.location.href = 'https\:\/\/igem.org/'">
+               <i class="fa-solid fa-bacterium"></i>
+               igem.org
+          </div>
+     </div>
+     <div class="slide7-right paragraph appear-right">
+          <h2 class="sub-headline">Previous Teams at TU Dresden</h2>
+          <div class="link sub-headline" onclick="window.location.href = 'https\:\/\/2017.igem.org/Team:TU_Dresden'">
+               <i class="fa-solid fa-people-group"></i>
+               iGEM TU Dresden 2017
+          </div>
+          <br>
+          <div class="link sub-headline" onclick="window.location.href = 'https\:\/\/2019.igem.org/Team:TU_Dresden'">
+               <i class="fa-solid fa-people-group"></i>
+               iGEM TU Dresden 2019
+          </div>
+     </div>
+</div>
       
 </body>
 </html>
 
 <!--SVG's =================================================================================================================================-->
 <svg style="display:none;" >
-<symbol id="instagram" width="100%">
-    <g>
-	<path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
-		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
-	<circle cx="41.5" cy="16.4" r="2.9"/>
-	<path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
-		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
-		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
-		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
-    </g>
-</symbol>
 <symbol id="access_icon_show" class="" viewBox="0 0 200 200" x="-75px">
     <g>
     <rect class="access_icon_box" width="128" height="128" rx="15"/>
