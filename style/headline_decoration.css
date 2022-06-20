@@ -21,7 +21,7 @@
 }
 
 #headline_Medicine {
-    fill: var(--lighterColor);
+    fill: var(--lighterColorAlt);
     transform: scale(130%);
 }
 
