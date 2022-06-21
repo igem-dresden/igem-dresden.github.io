@@ -6,7 +6,6 @@ window.addEventListener('scroll', function(e)  {
     linkedScrollBehaviour(".wound", ".bacteriophage, .growth_factor, .wound", "active2", "add");
 });
 
-
 Element.prototype.scrollIntoCenter = function() {
     let options = {"top": this.getCoordinates().y - window.innerHeight * 0.5, behavior: "smooth"}
     window.scroll(options);
