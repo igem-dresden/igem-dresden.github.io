@@ -11,6 +11,7 @@
 
     /*GLOBAL VARIABLES*/
     --column_scale: 0%;
+    --wound-overlay: 0%;
 }
 
 * {

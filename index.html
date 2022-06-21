@@ -119,12 +119,12 @@
 <div class="slide-container slide4">
      <h1 id="slide4" class="slide4-header headline">Our Solution</h1>
      <svg class="slide4-middle1 hydrogel" style="z-index: 3; padding: 50px;" width="100%" height="70vh"><use href="#hydrogel"/></svg>
-     <svg class="slide4-left2 bacteriophage" style="z-index: 2;" width="100%" height="70vh"><use href="#bacteriophage"/></svg>
-     <svg class="slide4-right2 growth_factor" style="z-index: 2;" width="100%" height="70vh"><use href="#growth_factors"/></svg>
-     <svg class="slide4-middle3" style="z-index: 2;" width="100%" height="80vh"><use href="#wound_with_overlay"/></svg>
+     <svg class="slide4-left2 bacteriophage active" style="z-index: 3;" width="100%" height="70vh"><use href="#bacteriophage"/></svg>
+     <svg class="slide4-right2 growth_factor active" style="z-index: 3;" width="100%" height="70vh"><use href="#growth_factors"/></svg>
+     <svg class="slide4-middle3 wound" style="z-index: 2;" width="100%" height="80vh"><use href="#wound_with_overlay"/></svg>
      <div class="slide4-middle2">
           <div class="paragraph appear-right">
-               <h2 class="sub-headline"><i class="fa-solid fa-arrow-left-long"></i> Phage Therapy</h2>
+               <h2 id="detail-anchor" class="sub-headline"><i class="fa-solid fa-arrow-left-long"></i> Phage Therapy</h2>
                We will produce bacteriophages to target antibiotic-resistant bacteria that
                infect wounds by adopting a phage therapy approach.
           </div>
@@ -135,10 +135,6 @@
           </div>
      </div>
 </div>
-<svg style="z-index: 2;" width="100%" height="100vh"><use href="#bacteriophage"/></svg>
-<svg style="z-index: 2;" width="100%" height="100vh"><use href="#growth_factors"/></svg>
-<svg style="z-index: 2;" width="100%" height="100vh"><use href="#hydrogel"/></svg>
-<svg style="z-index: 2;" width="100%" height="100vh"><use href="#wound_with_overlay"/></svg>
 <div class="slide-container slide5">
      <h1 id="slide5" class="slide5-header headline">Our Team</h1>
      <div class="slide5-left paragraph appear-left">
@@ -209,7 +205,7 @@
 </html>
 
 <!--SVG's =================================================================================================================================-->
-<svg style="display:none;" >
+<svg>
 <symbol id="access_icon_show" class="" viewBox="0 0 200 200" x="-75px">
     <g>
     <rect class="access_icon_box" width="128" height="128" rx="15"/>
@@ -441,10 +437,10 @@
      <line id="Line_9" x1="511.943" y1="513.372" x2="179.346" y2="375.606"  stroke-width="2"/>
      <line id="Line_10" x1="511.524" y1="512.708" x2="373.758" y2="180.112"  stroke-width="2"/>
      </g>
-     <g id="Diagram_2050">
+     <g id="Diagram_2050" mask="url(#mask0_2_2)">
      <path id="Diagram Column" style="--column-delay: 1.9s;" d="M562.168 129.352C629.033 138.155 692.422 164.334 746.013 205.278L511.816 511.816L562.168 129.352Z" />
      </g>
-     <g id="Diagram_Now">
+     <g id="Diagram_Now" mask="url(#mask0_2_2)">
      <path id="AMR" style="--column-delay: 0s;" d="M532.517 358.566C559.254 362.065 584.606 372.513 606.046 388.867L512.5 511.5L532.517 358.566Z" />
      <path id="Cancer_2" style="--column-delay: 0.5s;" d="M783.289 303.71C819.616 351.051 842.897 407.088 850.811 466.234L512.5 511.5L783.289 303.71Z" />
      <path id="Cholera_2" style="--column-delay: 0.2s;" d="M654.971 530.254C651.692 555.162 641.941 578.775 626.689 598.738L512.5 511.5L654.971 530.254Z" />
@@ -2387,7 +2383,7 @@
 <symbol id="chronic_wound"    
    width="100%"
    height="100%"
-   viewBox="0 600 2481 1749"
+   viewBox="0 200 2481 1749"
    version="1.1"
    xml:space="preserve"
    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
