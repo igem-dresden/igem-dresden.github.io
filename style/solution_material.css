@@ -1,11 +1,11 @@
 .bacteriophage { transition-duration: 1.5s; transform: translateY(-100px);}
 @media screen and (max-width: 1400px) {.bacteriophage { transform: translateY(-200px); } }
 .bacteriophage.active { transform: translate(50%, -95%) scale(20%); }
-.bacteriophage.active2 { transform: translate(90%, 90%) scale(20%); }
+.bacteriophage.active2 { transform: translate(90%, 110%) scale(20%); }
 
 .growth_factor { transition-duration: 1.5s; }
 .growth_factor.active { transform: translate(-50%, -95%) scale(20%); }
-.growth_factor.active2 { transform: translate(-90%, 90%) scale(20%); }
+.growth_factor.active2 { transform: translate(-90%, 110%) scale(20%); }
 
 .wound.active2 {--wound-overlay: 100%;}
 
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 1500px) {
     .bacteriophage.active { transform: translate(50%, -95%) scale(30%); }
-    .bacteriophage.active2 { transform: translate(90%, 90%) scale(30%); }
+    .bacteriophage.active2 { transform: translate(90%, 110%) scale(30%); }
     .growth_factor.active { transform: translate(-50%, -95%) scale(30%); }
-    .growth_factor.active2 { transform: translate(-90%, 90%) scale(30%); }
+    .growth_factor.active2 { transform: translate(-90%, 110%) scale(30%); }
 }
