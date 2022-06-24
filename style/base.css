@@ -9,6 +9,11 @@
     --linkColor: #0059ff;
     --linkColor_hover: #ff0062;
 
+    --hydrogel-Color: rgb(4, 0, 255);
+    --modeling-Color: rgb(255, 51, 0);
+    --wiki-Color: rgb(153, 0, 255);
+    --microbiology-Color: rgb(0, 214, 107);
+
     /*GLOBAL VARIABLES*/
     --column_scale: 0%;
     --wound-overlay: 0%;
