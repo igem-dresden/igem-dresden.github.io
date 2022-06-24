@@ -1,22 +1,42 @@
 .slide5 {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
 }
 
 .slide5-header {
-    grid-area: header;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-.slide5-left {
-    grid-area: left_side;
-    width: 75%;
-    margin-left: 12.5%;
+.slide5-item {
+    width: 100%;
+    margin-left: 25%;
+    height: fit-content;
+    padding: 20px;
 }
 
-.slide5-right {
-    grid-area: right_side;
+.team-image {
+    width: 50%;
+    border-radius: 10%;
 }
+
+.team-description {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 @media screen and (max-width: 750px) {
-    .slide5 { }
-    .slide5-right {margin-left: 25%; margin-top: 30px;}
+    .slide5 { grid-template-columns: auto;}
+    .slide5-header {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
 }
