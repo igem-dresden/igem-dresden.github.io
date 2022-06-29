@@ -36,6 +36,13 @@
     border-radius: 4px;
 }
 
+.team-description .wiki {
+    background-color: var(--wiki-Color);
+    color: white;
+    padding: 1.5px;
+    border-radius: 4px;
+}
+
 .team-description {
     width: 50%;
     text-align: center;
