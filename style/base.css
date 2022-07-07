@@ -13,6 +13,7 @@
     --modeling-Color: rgb(255, 51, 0);
     --wiki-Color: rgb(153, 0, 255);
     --microbiology-Color: rgb(0, 214, 107);
+    --funding-Color: rgb(255, 180, 20);
 
     /*GLOBAL VARIABLES*/
     --column_scale: 0%;
@@ -89,6 +90,7 @@ img {
     transform: translateX(-75px);
     opacity: 0;
     transition: 1s all ease;
+    transition-delay: var(--appear-delay);
 }
 
 .appear-right.active, .appear-left.active {
