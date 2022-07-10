@@ -19,5 +19,6 @@
 .slide4-right3 { grid-area: right_side3; }
 
 @media screen and (max-width: 750px) {
+    .slide4 .paragraph {font-size: 14pt;}
     .slide4 { grid-template-areas: 'header header header' 'middle_side1 middle_side1 middle_side1' 'left_side2 middle_side2 middle_side2' 'middle_side2 middle_side2 right_side3' 'middle_side3 middle_side3 middle_side3'; }
 }

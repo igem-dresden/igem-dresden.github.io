@@ -1,11 +1,11 @@
 .bacteriophage { transition-duration: 1.5s; transform: translateY(-100px);}
 @media screen and (max-width: 1400px) {.bacteriophage { transform: translateY(-200px); } }
 .bacteriophage.active { transform: translate(50%, -95%) scale(20%); }
-.bacteriophage.active2 { transform: translate(90%, 110%) scale(20%); }
+.bacteriophage.active2 { transform: translate(90%, 210%) scale(20%); }
 
-.growth_factor { transition-duration: 1.5s; }
+.growth_factor { transition-duration: 1.5s; transform: translateY(40vh); }
 .growth_factor.active { transform: translate(-50%, -95%) scale(20%); }
-.growth_factor.active2 { transform: translate(-90%, 110%) scale(20%); }
+.growth_factor.active2 { transform: translate(-90%, 210%) scale(20%); }
 
 .wound.active2 {--wound-overlay: 100%;}
 
@@ -13,7 +13,26 @@
 
 @media screen and (max-width: 1500px) {
     .bacteriophage.active { transform: translate(50%, -95%) scale(30%); }
-    .bacteriophage.active2 { transform: translate(90%, 110%) scale(30%); }
+    .bacteriophage.active2 { transform: translate(90%, 270%) scale(30%); }
+    .growth_factor {transform: translateY(40vh);}
     .growth_factor.active { transform: translate(-50%, -95%) scale(30%); }
-    .growth_factor.active2 { transform: translate(-90%, 110%) scale(30%); }
+    .growth_factor.active2 { transform: translate(-90%, 270%) scale(30%); }
 }
+
+@media screen and (max-width: 1800px) {.bacteriophage.active2 { transform: translate(90%, 270%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 270%) scale(30%); }}
+@media screen and (max-width: 1400px) {.bacteriophage.active2 { transform: translate(90%, 310%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 310%) scale(30%); }}
+@media screen and (max-width: 1300px) {.growth_factor {transform: translateY(60vh);}}
+@media screen and (max-width: 1200px) {.bacteriophage.active2 { transform: translate(90%, 360%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 360%) scale(30%); }}
+@media screen and (max-width: 1050px) {.growth_factor {transform: translateY(90vh);} .bacteriophage.active2 { transform: translate(90%, 400%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 400%) scale(30%); }}
+@media screen and (max-width: 970px) {.bacteriophage.active2 { transform: translate(90%, 460%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 460%) scale(30%); }}
+@media screen and (max-width: 870px) {.bacteriophage.active2 { transform: translate(90%, 500%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 500%) scale(30%); }}
+@media screen and (max-width: 850px) {.growth_factor {transform: translateY(120vh);}}
+@media screen and (max-width: 820px) {.bacteriophage.active2 { transform: translate(90%, 550%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 550%) scale(30%); }}
+@media screen and (max-width: 760px) {.bacteriophage.active2 { transform: translate(90%, 600%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 600%) scale(30%); }}
+@media screen and (max-width: 700px) {.growth_factor {transform: translateY(150vh);}}
+@media screen and (max-width: 650px) {.bacteriophage.active2 { transform: translate(90%, 650%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 650%) scale(30%); }}
+@media screen and (max-width: 600px) {.bacteriophage.active2 { transform: translate(90%, 700%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 700%) scale(30%); }}
+@media screen and (max-width: 580px) {.bacteriophage.active2 { transform: translate(90%, 770%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 770%) scale(30%); }}
+@media screen and (max-width: 570px) {.growth_factor {transform: translateY(190vh);}}
+@media screen and (max-width: 550px) {.bacteriophage.active2 { transform: translate(90%, 830%) scale(30%); } .growth_factor.active2 { transform: translate(-90%, 830%) scale(30%); }}
+@media screen and (max-width: 500px) {.growth_factor {transform: translateY(200vh);}}
