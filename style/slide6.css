@@ -15,6 +15,7 @@
     width: 1fr;
     height: auto;
     padding: 20px;
+    z-index: 3;
 }
 
 .supporter-image {
