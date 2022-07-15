@@ -31,7 +31,7 @@ function parallaxScroll() {
 }
 
 function appearWhenInView () {
-    var appearElements = document.querySelectorAll(".appear-left, .appear-right, .diseases_diagram");
+    var appearElements = document.querySelectorAll(".appear-left, .appear-right, .appear-down, .appear-up, .diseases_diagram");
     for(i = 0; i < appearElements.length; i++) {
         let position = appearElements[i].getBoundingClientRect().top;
         if(position < window.innerHeight - 150) {

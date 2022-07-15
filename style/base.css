@@ -94,7 +94,19 @@ img {
     transition-delay: var(--appear-delay);
 }
 
-.appear-right.active, .appear-left.active {
+.appear-down {
+    transform: translateY(75px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.appear-up {
+    transform: translateY(-75px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.appear-right.active, .appear-left.active, .appear-down.active, .appear-up.active {
     transform: translateY(0);
     opacity: 1;
 }

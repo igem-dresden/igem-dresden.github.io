@@ -1,0 +1,21 @@
+.slide0 {
+    grid-template-columns: 1fr 1fr; /*Creates a 2 column grid*/
+    grid-template-areas: 'left_side right_side';
+    background-color: var(--lighterColorAlt);
+}
+
+.slide0-left {
+    grid-area: left_side;
+    width: 100%;
+    margin: auto;
+}
+
+.slide0-right {
+    grid-area: right_side;
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 750px) {
+    .slide0 { grid-template-areas: 'left_side left_side' 'right_side right_side'; }
+}

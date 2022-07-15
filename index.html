@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="style/chronic_wound.css">
     <link rel="stylesheet" href="style/solution_material.css">
     <link rel="stylesheet" href="style/slide_base.css">
+    <link rel="stylesheet" href="style/slide0.css">
     <link rel="stylesheet" href="style/slide1.css">
     <link rel="stylesheet" href="style/slide2.css">
     <link rel="stylesheet" href="style/slide3.css">
@@ -41,6 +42,7 @@
           <use href="#access_icon_show" />
      </svg>
      <div id="anchor_bar" class="">
+          <li id="slide0-m" onclick="document.getElementById('slide0').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> Welcome</li>
           <li id="slide1-m" onclick="document.getElementById('slide1').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> iGEM 2022</li>
           <li id="slide2-m" onclick="document.getElementById('slide2').scrollIntoCenter()"><i class="fa-solid fa-gears"></i> Synthetic Biology</li>
           <li id="slide3-m" onclick="document.getElementById('slide3').scrollIntoCenter()"><i class="fa-solid fa-circle-exclamation"></i> The Problem</li>
@@ -51,17 +53,26 @@
      </div>
 </ul>
 <!--==============================================================================================================================================================-->
+<div class="slide-container slide0">
+     <div class="slide0-left">
+          <h1 id="slide0" class="appear-up" style="text-align: center;">The Future of Chronic Wound Treatment</h1>
+          <p class="paragraph appear-down" style="text-align: center;">We are a team from <b>TU Dresden</b> participating in <b>iGEM 2022</b></p>
+     </div>
+     <h1 id="slide0" class="slide0-header headline">
+          <!--
+          <svg style="z-index: 2;"><use href="#tu-dresden-logo"/></svg>
+          <svg class="slide0-header" style="z-index: 2;"><use href="#igem_logo" /></svg>
+          -->
+          <svg class="hydrogel appear-up" style="z-index: 3; padding: 50px;" width="100%" height="40vh"><use href="#hydrogel"/></svg>
+          <svg class="wound appear-down" style="z-index: 2;" width="100%" height="40vh"><use href="#wound_with_overlay"/></svg>
+     </h1>
+</div>
 
 <div class="slide-container slide1">
-     <h1 id="slide1" class="slide1-header headline">
-          <svg class="slide1-header" style="z-index: 2;"><use href="#igem_logo" /></svg>
-          <svg style="z-index: 2;"><use href="#tu-dresden-logo"/></svg>
-          <p style="font-size: 72pt; margin: 0%;">2022</p>
-     </h1>
+     <h1 id="slide1" class="slide1-header headline">What is iGEM?</h1>
      <div class="slide1-left appear-left" style="z-index: 2;">
      </div>
      <div class="slide1-right paragraph appear-right">
-          <h2 class="sub-headline">What is iGEM?</h2>
           The International Genetically Engineered Machine (<a class="link" href="https://igem.org/">iGEM</a>) is a student competition dedicated to the advancement of synthetic biology, interdisciplinary cooperation and education. It involves thousands of participants and hundreds of teams from all over the world every year. Our team is composed of 13 members from 6 different countries - Italy, Belarus, USA, Lithuania, Russia, and Germany - with students from all three master programs of the Center for Molecular and Cellular Bioengineering (CMCB) and from Informatik, Medieninformatik, and the Hochschule für Bildende Künste. 
      </div>
 </div>
