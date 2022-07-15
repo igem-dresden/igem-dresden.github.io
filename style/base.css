@@ -27,7 +27,7 @@
 body{
     font-family: 'Marmelad', sans-serif;
     background-color: var(--lighterColor);
-    color: var(--darkColor);
+    color: var(--darkerColor);
     margin-left:0%;
     margin-right:0%;
     margin-top:0%;
@@ -54,10 +54,11 @@ body{
 }
 
 .paragraph {
-    font-size: 15pt;
+    font-size: 16pt;
     font-weight: 550;
     padding: 15px;
     height: fit-content;
+    text-align: justify;
     /*
     // OLD Attempt of box around paragraph
     border-color: var(--darkColor);
