@@ -17,5 +17,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    .slide0 { grid-template-areas: 'left_side left_side' 'right_side right_side'; }
+    .slide0 { grid-template-columns: 1fr; /*Creates a 2 column grid*/}
+    .slide0 { grid-template-areas: 'left_side' 'right_side'; }
+    .slide0-right * { transform: translateX(50%);}
 }
