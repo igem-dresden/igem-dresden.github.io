@@ -47,6 +47,13 @@
     border-radius: 4px;
 }
 
+.team-description .team_instructor {
+    background-color: rgb(15, 127, 255);
+    color: white;
+    padding: 1.5px;
+    border-radius: 4px;
+}
+
 .team-description .microbiology {
     background-color: var(--microbiology-Color);
     color: white;
