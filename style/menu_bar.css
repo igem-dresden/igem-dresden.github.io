@@ -30,9 +30,7 @@
     font-size: 17pt;
 }
 
-.menu_bar li:hover, .menu_bar li:active { background-color: var(--darkColor); cursor: pointer; }
-
-.menu_bar li.active { color: var(--lightColor); }
+.menu_bar li.menu:hover, .menu_bar li.menu:active { background-color: var(--darkColor); cursor: pointer; }
 
 .access_button {
     padding: 10px;

@@ -34,6 +34,11 @@
     <!--Scripts-->
     <script src="scripts/scroll_Logic.js"></script>
     <script src="scripts/hidden_nav_bar.js"></script>
+    <script async src="https://api.countapi.xyz/hit/igem-dresden.github.io/visits?callback=cb"></script>
+    <script>function cb(response) {
+     const people_icon = '<i class="fa-solid fa-person"></i>'; 
+     document.getElementById("visits").innerHTML = "Visit-Counter:" + " " + response.value; 
+     }</script>
 </head>
 <body>
 <!--Menu Bar======================================================================================================================================================-->
@@ -42,14 +47,15 @@
           <use href="#access_icon_show" />
      </svg>
      <div id="anchor_bar" class="">
-          <li id="slide0-m" onclick="document.getElementById('slide0').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> Welcome</li>
-          <li id="slide1-m" onclick="document.getElementById('slide1').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> iGEM 2022</li>
-          <li id="slide2-m" onclick="document.getElementById('slide2').scrollIntoCenter()"><i class="fa-solid fa-gears"></i> Synthetic Biology</li>
-          <li id="slide3-m" onclick="document.getElementById('slide3').scrollIntoCenter()"><i class="fa-solid fa-circle-exclamation"></i> The Problem</li>
-          <li id="slide4-m" onclick="document.getElementById('slide4').scrollIntoCenter()"><i class="fa-solid fa-lightbulb"></i> Our Solution</li>
-          <li id="slide5-m" onclick="document.getElementById('slide5').scrollIntoCenter()"><i class="fa-solid fa-people-group"></i> Our Team</li>
-          <li id="slide6-m" onclick="document.getElementById('slide6').scrollIntoCenter()"><i class="fa-solid fa-handshake"></i> Supporters</li>
-          <li id="slide7-m" onclick="document.getElementById('slide7').scrollIntoCenter()"><i class="fa-solid fa-address-book"></i> Contact Us</li>
+          <li class="menu" id="slide0-m" onclick="document.getElementById('slide0').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> Welcome</li>
+          <li class="menu" id="slide1-m" onclick="document.getElementById('slide1').scrollIntoCenter()"><i class="fa-solid fa-bacterium"></i> iGEM 2022</li>
+          <li class="menu" id="slide2-m" onclick="document.getElementById('slide2').scrollIntoCenter()"><i class="fa-solid fa-gears"></i> Synthetic Biology</li>
+          <li class="menu" id="slide3-m" onclick="document.getElementById('slide3').scrollIntoCenter()"><i class="fa-solid fa-circle-exclamation"></i> The Problem</li>
+          <li class="menu" id="slide4-m" onclick="document.getElementById('slide4').scrollIntoCenter()"><i class="fa-solid fa-lightbulb"></i> Our Solution</li>
+          <li class="menu" id="slide5-m" onclick="document.getElementById('slide5').scrollIntoCenter()"><i class="fa-solid fa-people-group"></i> Our Team</li>
+          <li class="menu" id="slide6-m" onclick="document.getElementById('slide6').scrollIntoCenter()"><i class="fa-solid fa-handshake"></i> Supporters</li>
+          <li class="menu" id="slide7-m" onclick="document.getElementById('slide7').scrollIntoCenter()"><i class="fa-solid fa-address-book"></i> Contact Us</li>
+          <li id="visits"></li>
      </div>
 </ul>
 <!--==============================================================================================================================================================-->
