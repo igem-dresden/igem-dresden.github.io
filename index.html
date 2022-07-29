@@ -34,7 +34,8 @@
     <!--Scripts-->
     <script src="scripts/scroll_Logic.js"></script>
     <script src="scripts/hidden_nav_bar.js"></script>
-    <script async src="https://api.countapi.xyz/hit/igem-dresden.github.io/visits?callback=cb"></script>
+    <!--change src to https://api.countapi.xyz/hit/dev.igem-dresden.github.io/visits?callback=cb, if you want to debug this stuff-->
+    <script async src="https://api.countapi.xyz/hit/deploy.igem-dresden.github.io/visits?callback=cb"></script>
     <script>function cb(response) {
      const people_icon = '<i class="fa-solid fa-person"></i>'; 
      document.getElementById("visits").innerHTML = "Visit-Counter:" + " " + response.value; 
