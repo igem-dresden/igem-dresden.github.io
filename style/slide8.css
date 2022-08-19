@@ -1,0 +1,34 @@
+.slide8 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: row;
+}
+
+.slide8-header {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.slide8-item {
+    width: 1fr;
+    height: auto;
+    padding: 20px;
+    z-index: 3;
+}
+
+.sponsor-image {
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .slide8 { grid-template-columns: auto;}
+    .slide8-header {
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
